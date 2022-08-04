@@ -2,10 +2,16 @@ import java.sql.SQLOutput;
 
 public class Main {
     public static void main(String[] args) {
-      int year = 2021;
-      if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
-          System.out.println (year + " является високосным"); }
-      else { System.out.println (year + " не является високосным");
-      }
+        int deliveryDistance = 95;
+        int deliveryDay = 1;
+        if (deliveryDistance > 20) {
+            deliveryDay++;
+        }
+
+        if (deliveryDistance > 60) {
+            deliveryDay++;
+        }
+        System.out.println("Потребуется дней: " + deliveryDay);
+
     }
 }
